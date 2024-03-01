@@ -13,6 +13,8 @@ Portrait View:
 Landscape View:
 ![WhatsApp Image 2024-03-01 at 12 34 37 PM (1)](https://github.com/ShahidAnsari786-tech/react-frontend-swapi-challange/assets/64380206/1fa4757f-c493-4e34-808d-473e79a63078)
 
+
+[GO LIVE](https://shahidswapi.netlify.app/)
 Features and Components
 
 App Component (App.js):
