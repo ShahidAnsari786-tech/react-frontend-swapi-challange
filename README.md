@@ -3,6 +3,16 @@ Star Wars Galaxy Explorer
 
 Welcome to the Star Wars Galaxy Explorer! This project is a web application designed to provide users with an interactive experience to explore the vast and captivating universe of Star Wars. Whether you're a die-hard fan or a casual enthusiast, this app offers a unique journey through iconic planets, species, and cultures from the beloved franchise.
 
+Responsive Design for max width screens:
+<img width="950" alt="responsive" src="https://github.com/ShahidAnsari786-tech/react-frontend-swapi-challange/assets/64380206/544abce0-6860-4aa3-9964-7d04a70a6466">
+
+Responsive Design with Mobile Devices small screens:
+Portrait View:
+![WhatsApp Image 2024-03-01 at 12 34 37 PM](https://github.com/ShahidAnsari786-tech/react-frontend-swapi-challange/assets/64380206/43095d93-413b-452b-a5fd-c3743ac937be)
+
+Landscape View:
+![WhatsApp Image 2024-03-01 at 12 34 37 PM (1)](https://github.com/ShahidAnsari786-tech/react-frontend-swapi-challange/assets/64380206/1fa4757f-c493-4e34-808d-473e79a63078)
+
 Features and Components
 
 App Component (App.js):
