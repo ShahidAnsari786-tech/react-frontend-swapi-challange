@@ -1,0 +1,416 @@
+/* Styles for the main container of the application */
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+}
+
+
+/* Styles for back,page and next buttons */
+.btn {
+    --color: blue;
+    --color2: rgb(250, 253, 253);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 16px;
+    border: .7px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   /* Styles for button pseudo-elements */
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 55%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -55%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   /* Hover styles for button pseudo-elements */
+   .btn:hover::before {
+    transform: skew(50deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(50deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover {
+    color: var(--color2);
+   }
+   
+   /* Active styles for buttons */
+   .btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
+
+   .nex {
+    --color: rgb(230, 248, 203);
+    --color2: rgb(7, 7, 243);
+    --arrow-color:white;
+    padding: 0.8em 1.75em;
+    background-color: rgb(3, 3, 147);
+    margin-bottom: 20px;
+    border-radius: 16px;
+    border: .7px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   .arrow {
+    border: solid var(--arrow-color);
+    border-width: 0 3px 3px 0;
+    align-content: center;
+    margin-bottom: 1.5px;
+    margin-left: 5px;
+    margin-right:5px;
+    display: inline-block;
+    padding: 3px;
+    transition: border-color 0.5s;
+  }
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+   
+   .nex::after, .nex::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 55%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .nex::before {
+    top: -50%;
+    left: -55%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .nex:hover::before {
+    transform: skew(50deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .nex:hover::after {
+    transform: skew(50deg) translate(-50%, -50%);
+   }
+   
+   .nex:hover{
+    color: var(--color2);
+    --arrow-color:blue;
+   
+   }
+   
+   .nex:active {
+    transform: translateY(5px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+   }
+
+   .pre {
+    --color: rgb(230, 248, 203);
+    --color2: rgb(7, 7, 243);
+    --arrow-color:white;
+    padding: 0.8em 1.75em;
+    background-color: rgb(3, 3, 147);
+    margin-bottom: 20px;
+    border-radius: 16px;
+    border: .7px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+   }
+   
+   .pre::after, .pre::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 55%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+   }
+   
+   .pre::before {
+    top: -50%;
+    left: -55%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .pre:hover::before {
+    transform: skew(50deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .pre:hover::after {
+    transform: skew(50deg) translate(-50%, -50%);
+   }
+   
+   .pre:hover {
+    color: var(--color2);
+    --arrow-color:blue;
+   }
+   
+   .pre:active {
+    transform: translateY(5px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+   }
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styles for a grid layout ( for planet section) */
+.planet {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+  
+}
+
+.box {
+  position: relative;
+  text-align: center;
+  box-shadow: 0px -5px 15px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  transition: transform 0.7s ease, box-shadow 0.3s ease;
+  background-color: lightGrey;
+  width:90%;
+  height:auto;
+}
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 40px 2px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+
+
+/* Media queries for responsive layout */
+@media (max-width:1200px) {
+  .planet {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    width: 92%;
+  }
+}
+
+@media (max-width: 767px) {
+  .planet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 93%;
+  }
+}
+
+/* Styles for very small screens */
+@media (max-width: 480px) {
+  .planet {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    width: 92%;
+  }
+}
+
+/* Styles for extra small screens */
+@media (max-width:360px) {
+  .planet {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    width: 89%;
+  }
+}
+
+.skeleton {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skeleton-item {
+  width: 90%; 
+  height: 672px;
+  gap: 20px; 
+  margin: auto; 
+  border-radius: 20px; 
+  background: linear-gradient(to bottom right, #68d5f9, #91d7ee, #d7c8c8, #c0dae4); 
+  background-size: 200% 200%; 
+  animation: skeleton-loading 1.9s linear infinite; 
+}
+@keyframes skeleton-loading {
+  0% {
+    background-position: bottom right,bottom left; 
+  }
+  100% {
+    background-position: top left; 
+  }
+}
+
+
+
+/* Adjust the styles for the skeleton items inside the heading */
+.App .skeleton-heading {
+  display: inline-block;
+  width: 350px; 
+  height: 50px; 
+  border-radius: 4px; 
+  overflow: hidden; 
+  position: relative; 
+}
+
+/* Create a loading animation */
+.App .skeleton-heading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #68d5f9, #91d7ee, #d7c8c8, #c0dae4); /* Gradient background for loading animation */
+  background-size: 400% 100%; 
+  border-radius: 4px; 
+  animation: loading 1.5s infinite linear; 
+}
+
+.App .skeleton-creator {
+  display: inline-block;
+  width: 250px; 
+  height: 20px; 
+  border-radius: 4px; 
+   
+  overflow: hidden; 
+  position: relative; 
+}
+
+/* Create a loading animation */
+.App .skeleton-creator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #68d5f9, #91d7ee, #d7c8c8, #c0dae4); /* Gradient background for loading animation */
+  background-size: 400% 100%; 
+  border-radius: 4px; 
+  animation: loading 1.5s infinite linear; 
+}
+
+@keyframes loading {
+  0% {
+    background-position: 100% 50%; 
+  }
+  100% {
+    background-position: 0 50%; 
+  }
+}
+
+/* Adjust the animation duration for the skeleton loader */
+@keyframes skeleton-loading {
+  0% {
+    opacity: 0.5; 
+  }
+  50% {
+    opacity: 1; 
+  }
+  100% {
+    opacity: 0.5; 
+  }
+}
+
+
+
+
+
+
+
+
+
