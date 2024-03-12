@@ -2,7 +2,7 @@ import './App.css';
 import { useEffect, useState, useCallback } from 'react';
 import PlanetCard from './components/PlanetCard';
 
-const baseURL = 'https://swapi.dev/api/planets';
+const baseURL = 'https://swapi.py4e.com/api/planets/';
 
 function App() {
   const [page, setPage] = useState(1);
@@ -40,7 +40,7 @@ function App() {
   };
 
   if (isError) {
-    return <h1 style={{ textAlign: 'center' }}>Error...</h1>;
+    return <h1 style={{ textAlign: 'center',color:'white' }}>Error...</h1>;
   }
 
   return (
@@ -77,9 +77,9 @@ function App() {
       </div>
 
       {isLoading ? (
-        <h5 style={{ color: 'teal' }} className="skeleton-item skeleton-creator">Made with <span style={{ color: 'grey',fontSize: '40px'}}>&#9825; </span>by SHAHID ANSARI</h5>
+        <h5 style={{ color: 'lightgrey' }} className="skeleton-item skeleton-creator">Made with <span style={{ color: 'red',fontSize: '45px'}}>&#9825; </span>by SHAHID ANSARI</h5>
       ) : (
-        <h5 style={{ color: 'lightGray' }}>Made with <span style={{ color: 'grey',fontSize: '40px' }}>&#9825; </span>by Shahid Ansari</h5>
+        <h5 style={{ color: 'lightGray' }}>Made with <span style={{ color: 'red',fontSize: '47px' }}>&#9825; </span>by Shahid Ansari</h5>
       )}
     </div>
   );

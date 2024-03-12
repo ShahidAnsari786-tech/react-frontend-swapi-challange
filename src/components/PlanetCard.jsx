@@ -4,7 +4,7 @@ import ResidentCard from './ResidentCard';
 // PlanetCard component responsible for displaying details of a planet
 const PlanetCard = ({ name, climate, population, terrain, residents }) => {
     return (
-        <div className='box'>
+        <div className='box' style={{ position: 'relative'}}>
            <div style={{backgroundColor:'blue',paddingBottom:'20px',width:'100%',paddingTop:'0.1px',borderRadius:'25px 25px 0 0'}}>
             <h2 style={{ color: 'white' }}>Planet Name: <span style={{ color: 'gold' }}>{name}</span></h2>
             <p style={{color:'yellow'}}>Climate: {climate}</p>
@@ -13,7 +13,7 @@ const PlanetCard = ({ name, climate, population, terrain, residents }) => {
             </div>
             <div>
                 <h4 style={{ color: 'navy' }}>Residents: {residents.length}</h4>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '2px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '3px'}}>
                     {(residents && residents.length > 0) ? residents?.map((residentUrl, index) =>
                         <ResidentCard key={index} residentUrl={residentUrl} index={index} />
                     ) : null}

@@ -27,7 +27,7 @@ const ResidentCard = ({ residentUrl, index }) => {
     // Render resident card with details and toggle functionality
     return (
         <div style={{ position: 'relative' }}>
-            <button className='btn' onClick={() => setFlag(!flag)} style={{ cursor: 'pointer' }}> <p >Resident {index + 1}</p></button>
+            <button className='btn' onClick={() => setFlag(!flag)} > <p>Resident {index + 1}<span style={{ fontSize: '15px',paddingLeft:'10px' }}>&rarr;</span></p></button>
             {flag && <div style={{ position: 'absolute', zIndex: 10, background: 'lightYellow', boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', padding: '0px 5px', border: '1px solid blue', borderRadius: '5px', minWidth:'100px' }}>
                 <h5 style={{ color: 'blue' }}>Resident Number: {index + 1}</h5>
                 <h5>Name: {residentDetails?.name}</h5>
