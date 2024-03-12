@@ -13,7 +13,7 @@
 
 /* Styles for back,page and next buttons */
 .btn {
-    --color: blue;
+    --color: rgb(4, 4, 249);
     --color2: rgb(250, 253, 253);
     padding-right: 1px;
     padding-left: 1px;

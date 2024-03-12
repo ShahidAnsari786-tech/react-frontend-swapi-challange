@@ -12,7 +12,7 @@ const PlanetCard = ({ name, climate, population, terrain, residents }) => {
             <p style={{ color: 'yellow' }}>Terrain: {terrain}</p>
             </div>
             <div>
-                <h4 style={{ color: 'navy' }}>Residents: {residents.length}</h4>
+                <h4 style={{ color: 'darkBlue' }}>Residents: {residents.length}</h4>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: '3px'}}>
                     {(residents && residents.length > 0) ? residents?.map((residentUrl, index) =>
                         <ResidentCard key={index} residentUrl={residentUrl} index={index} />

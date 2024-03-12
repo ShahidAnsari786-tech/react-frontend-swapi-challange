@@ -72,7 +72,7 @@ function App() {
         <button style={{ marginBottom: '20px', border: '.8px solid white', borderRadius: '4px', padding: '7px 15px', fontSize: '25px', color: 'white', background: 'blue' }} disabled>{page}</button>
 
         <button className="nex" disabled={page >= Math.floor(totalPages / 10)} onClick={() => handlePageChange(1)}>
-          NEXT<span className="arrow right"></span>
+          Next<span className="arrow right"></span>
         </button>
       </div>
 
